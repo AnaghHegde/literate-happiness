@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "Auth Signatory Add India",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgenerateOID: (intValue) => {\n\t\treturn [...Array(8)].map(() => Math.floor(Math.random() * intValue).toString(intValue)).join('')\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "Auth Signatory Add India_utils",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620a1ca75ce68e0e609d9e0b"
+}

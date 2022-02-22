@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObjectGenerateOTP",
+    "pageId": "LogInGuest",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tgenerateOTP: () => {          \n    // Declare a digits variable \n    // which stores all digits\n    var digits = '0123456789';\n    let OTP = '';\n    for (let i = 0; i < 4; i++ ) {\n        OTP += digits[Math.floor(Math.random() * 10)];\n    }    \n\t\t storeValue('OTPval',OTP);\n\t\t SendEmailTo.run();\n\t//\treturn OTP;\t\n\t\tnavigateTo(\"LogInConfirmOTP\");\n\t},\t\n\tmyfun: () => {\n\t\t  \n\t\t\t\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "LogInGuest_JSObjectGenerateOTP",
+  "deleted": false,
+  "gitSyncId": "620a44fa5acff70fe6310821_620ca2177286647cbcf8406b"
+}

@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSBankAccountDetails",
+    "pageId": "Bank Account Information",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\n\tmyFunCreateBankAccountDetails:  async ()=> {\n\t//\tfor (var i = 0; i < appsmith.store.vayCCY.length; i++) {\n\t\t//await createBankAccountDetails.run({ index: i });\n\t\tawait createBankAccountDetails.run();\n\t\t\tnavigateTo('Bank Account Information List', {});\n//}\n\t},\n\t\tget_data_rows: () => {\n\t\treturn `(${vayBankAccountList.items.map(item => `\\'${item.vayCrspBankName.text}\\'`).join(\"), (\")})`;\n\t},\n\tmyFungenerateOID: () => {\n\t\treturn Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1).concat('OID');\n\t}\t,\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Bank Account Information_JSBankAccountDetails",
+  "deleted": false,
+  "gitSyncId": "61f91c227d9ae6350106c2a4_61fbb70b1c53c8021c8e73a7"
+}

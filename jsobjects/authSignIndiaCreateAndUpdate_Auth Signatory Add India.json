@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "authSignIndiaCreateAndUpdate",
+    "pageId": "Auth Signatory Add India",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonClick: () => {\n\t\t\n\t\t/*if(Helper.validatePartnerPercentage()){\n\t\t\tnavigateTo('Auth Signatory Add India', {});\n\t\t\treturn false;\n\t\t}*/\n\t\tif (Input1.text == \"      \" ){\n\t\t\t\tshowAlert('Enter First Name')\n\t\t}\n\t\telse {\n\t\t\treturn isAuthSignPersonIndiaExists.run(\n\t\t     async (response) => {\n\t\t\t\t //if(!!response && !!response.customerEntityPersonOIDForKeyPerson){\n\t\t\t\t if(appsmith.store.editKeyPersonOID != \"\"){\n\t\t\t\t\tshowAlert('Update to Auth Signatory Person India record::'+ appsmith.store.editKeyPersonOID) \n\t\t\t\t\tawait storeValue('customerEntityPersonOIDForAuthSignPerson',response.customerEntityPersonOIDForAuthSignPerson)\n\t\t\t\t\tawait updateAuthSignatoryIndia.run((response) => showAlert('Auth Signatory Person Details Updated'))\n\t\t\t\t\tHelper.updateAuthSignatoryPersonCurrencyLimitQuery();\n\t\t  \t}else {\n\t\t\t\t\tconst personOID = utils.generateOID(19);\n\t\t\t\t\t//await createAuthSignatoryIndia.run((response) => {showAlert('Key Person Details Added') },(error) => {showAlert('Key Person Details Failed')},{personOID});\n\t\t\t\t\t//await createAuthSignCurrencyLimit.run({personOID:personOID});\n\t\t\t\t\t//createAuthSignatoryIndia.run((response) => {return createAuthSignCurrencyLimit.run({personOID:personOID})},(error) => {showAlert('Key Person Details Failed')},{personOID});\n\t\t\t\t\tconst response_key_person = await createAuthSignatoryIndia.run({personOID});\n\t\t\t\t\tif (!!response_key_person) {\n\t\t\t\t\t\t\tshowAlert('Auth Signatory Person Details Added') \n\t\t\t\t\t\t\tawait createAuthSignCurrencyLimit.run({personOID})\n\t\t\t\t\t\t\tshowAlert('Auth Signatory Person Currency Limit Added') \n\t\t\t\t\t}\n\t\t  \t}\n\t\t\t\t \tnavigateTo('Auth Signatory Summary', {});\n\t\t   }\n\t    );\n\t\t} \n\t},\n\tdummy:() => {\n\t\t//const oid = isAuthSignPersonIndiaExists.run((response) =>{showAlert('return value is '+oid)};\n    //const return_currencylimit = getAuthSignPersonCurrencyLimit.run() ;\n\t\t//showAlert('OID is '+return_response.customerEntityPersonOIDForKeyPerson)\n\t\tconsole.log(appsmith.store.customerOID + \" \" + appsmith.store.editKeyPersonOID )\n\t\t//return return_currencylimit\n\t\t//{{Number()}}\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "Auth Signatory Add India_authSignIndiaCreateAndUpdate",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620a1ca05ce68e0e609d9e07"
+}

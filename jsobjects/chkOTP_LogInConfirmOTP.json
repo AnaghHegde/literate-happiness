@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "chkOTP",
+    "pageId": "LogInConfirmOTP",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tchkOTPfun: () => {\n\t\t//write code here\n\t\t{{if(appsmith.store.OTPval==txtConfirmOTP.text)\n{\n\tstoreValue('BucketName','tempappsmith');\n\tstoreValue('FilePath','temp');\n\tstoreValue('MaxFiles',1);\n\tstoreValue('MaxFileSize',5);\n\tshowAlert('Login Successful');\n\tnavigateTo('Homepage');\n}\nelse\n{\n\tshowAlert('Incorrect OTP')\n}\n}}\n\t},\n\tmyFun2: () => {\n\t\t//write code here\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "LogInConfirmOTP_chkOTP",
+  "deleted": false,
+  "gitSyncId": "620a44fa5acff70fe6310821_620cb9b97286647cbcf84078"
+}

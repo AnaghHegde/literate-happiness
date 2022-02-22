@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Helper",
+    "pageId": "UBO Individual Addition",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetUBOIndividualPersonData: ()=>{\n\t\treturn appsmith.store.keyPersonData;\n\t},\n\tgetCurrencies: ()=>{\n\t\treturn appsmith.store.vayCCY;\n\t},\n\tdummy:() => {\n\t\treturn \n\t},\n\tgetStore:() =>{\n\t\treturn appsmith.store;\n }\n}\n",
+    "variables": []
+  },
+  "id": "UBO Individual Addition_Helper",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620a76e45ce68e0e609d9e4f"
+}

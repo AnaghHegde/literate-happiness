@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "fetchKeyPersonData",
+    "pageId": "Key Person Summary",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonClick: () => {\n\t\tstoreValue('editKeyPersonOID',appsmith.store.editKeyPersonOID)\n\t\tshowAlert('Key Person Record :'+appsmith.store.editKeyPersonOID);\n\t\treturn getKeyPersonDetails.run( async (response) => {\n\t\t\tif (!!response) {\n\t\t\t\t// Need to build logic to create the person details\n\t\t\t\tshowAlert('Success - Fetch Key Person India Details');\n\t\t\t\tawait storeValue('keyPersonData',response);\n\t\t\t\tnavigateTo('Key Person Add India');\n\t\t }\n\t\t}\n\t)\n\t\t/*const response_personDetails = getKeyPersonDetails.run()\n\t\tif (!!response_personDetails) {\n\t\t\t\t// Need to build logic to create the person details\n\t\t\t\tshowAlert('Success - Fetch Key Person India Details');\n\t\t\t\tstoreValue('keyPersonData',response_personDetails);\n\t\t\t\tnavigateTo('Key Person Add India');\n\t\t\t} else {\n\t\t\t\tshowAlert('Failed - Fetch Key Person India Details');\t\n\t\t\t}*/\n},\n\tdummy:() => {\n\t\t//const response_personDetails = getKeyPersonDetails.run();\n\t\t//return response_personDetails;\n\t\tstoreValue('customerOID','7b38d343');\n\t\tif(appsmith.store.editKeyPersonOID != \"\"){\n\t\t\t\t//storeValue('editKeyPersonOID',\"\");\n\t\t\t\n\t\t}\n\t\treturn 'Customer OID-'+appsmith.store.customerOID+' Key Person OID '+appsmith.store.editKeyPersonOID;\n\t}\n}\t",
+    "variables": []
+  },
+  "id": "Key Person Summary_fetchKeyPersonData",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_62029add9a70a841b00e7b28"
+}

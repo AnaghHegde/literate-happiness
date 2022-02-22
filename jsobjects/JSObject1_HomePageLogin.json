@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "HomePageLogin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\tif(Select1.selectedOptionValue ==='Registered')\n\t\t{\n\t\t\t\tstoreValue('selectedRole',Select1.selectedOptionValue);\n\t\t\t\tnavigateTo('LogIn');\n\t\t}\n\t\telse\n\t\t\t{\n\t\t\t\tstoreValue('selectedRole',Select1.selectedOptionValue);\n\t\t\t\tnavigateTo('LogInGuest');\n\t\t\t}\n\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "HomePageLogin_JSObject1",
+  "deleted": false,
+  "gitSyncId": "620a44fa5acff70fe6310821_620ded9cc1704e43c2d412d9"
+}

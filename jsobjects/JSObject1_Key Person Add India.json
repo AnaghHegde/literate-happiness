@@ -1,0 +1,26 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Key Person Add India",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [{label : \"test\",value:\"tetst\"}],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//testSelect.options.push() = Array([{label : \"test\",value:\"tetst\"}])).push();//write code here\n\t\n\t\tif(vayApplicantConstitution.selectedOptionValue == \"proprietorship\"){\n\t\t\t\treturn [{label:'Proprietorship',value:'proprietorship'},{label:'others',value:'others'}];\n\t}\n\t if (vayApplicantConstitution.selectedOptionValue == \"partnership\")\n\t\t{ \n\t\t\t\t\t\treturn [{label:'Partnership',value:'partnership'},{label:'others',value:'others'}];\n\t}\n\t if (vayApplicantConstitution.selectedOptionValue == \"LLP\")\n\t\t{ \n\t\t\t\t\t\treturn [{label:'Limited Liability Partnership (LLP)',value:'Limited Liability Partnership (LLP)'},{label:'others',value:'others'}];\n\t}\n\t\tif (vayApplicantConstitution.selectedOptionValue == \"PLC\")\n\t\t\t\t\n\t\t{ \n\t\t\t\t\t\treturn [{label:'Public Limited Company (PLC)',value:'Public Limited Company (PLC)'},{label:'others',value:'others'}];\n\t}\n\t\tif (vayApplicantConstitution.selectedOptionValue == \"LLC\")\n\t\t{ \n\t\t\t\t\t\treturn [{label:'Private Limited Company (LLC)',value:'Private Limited Company (LLC)'},{label:'others',value:'others'}];\n\t}\n\t}\n\t\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": [
+          {}
+        ]
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Key Person Add India_JSObject1",
+  "deleted": false,
+  "gitSyncId": "61d08dd5a4437918c01f9d15_61d59391a4437918c0221326"
+}

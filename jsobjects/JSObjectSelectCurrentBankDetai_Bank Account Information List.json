@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObjectSelectCurrentBankDetai",
+    "pageId": "Bank Account Information List",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFunSelectCurrentBankDetails: async () => {\n\t\t//write code here\n\t\t//return  await SelectCurrentBankDetails.run()\n\t\tconst return_response =\tSelectCurrentBankDetails.run();\n\t\treturn return_response;\n\t\t \n\t\t},\n\tmyFun2: () => {\n\t\t//write code here\n\tconst return_response =\tSelectCurrentBankDetails.run();\n\t\treturn return_response;\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Bank Account Information List_JSObjectSelectCurrentBankDetai",
+  "deleted": false,
+  "gitSyncId": "61f91c227d9ae6350106c2a4_620298a8957ec960c4358b30"
+}

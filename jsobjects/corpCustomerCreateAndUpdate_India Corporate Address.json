@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "corpCustomerCreateAndUpdate",
+    "pageId": "India Corporate Address",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonClick: () => {\n\t\t\tif (vayCrSelectedComAddr.text == \"      \"){\n\t\t\t\tshowAlert('We need your communication Address')\n\t\t}\n\t\telse {\n\t\t  return isCustomerAddressExists.run(\n\t\t   async (response) => {\n\t\t  \t//if(response.count > 0){\n\t\t\t\t//if(response.length > 0 && response != null && response.customerEntityOIDForAddress !=\"\"){ \n\t\t\t\t if(!!response && !!response.customerEntityOIDForAddress){\n\t\t\t\t\tawait storeValue('customerEntityOIDForAddress',response.customerEntityOIDForAddress)\n\t\t\t\t\tawait updateCustomerDetailAddCommAdd.run((response) => showAlert('Customer Details Updated'))\n\t\t  \t}else {\n\t\t\t\t\tawait createCustomerDetailAddCommAdd.run((response) => {showAlert('Customer Details Created')});\n\t\t  \t}\n\t\t\t\t \tnavigateTo('Currencies',{});\n\t\t   }\n\t    );\n\t\t  \n\t\t}\n\t},\n\tdummy:() => {\n\t\t{{Number()}}\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "India Corporate Address_corpCustomerCreateAndUpdate",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_61f9182b44c7a82bb8fac125"
+}

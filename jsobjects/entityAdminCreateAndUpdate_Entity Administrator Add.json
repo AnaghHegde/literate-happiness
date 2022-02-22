@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "entityAdminCreateAndUpdate",
+    "pageId": "Entity Administrator Add",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonClick: () => {\n\t\tif (Input1.text == \"      \" ){\n\t\t\t\tshowAlert('Enter First Name')\n\t\t}\n\t\telse {\n\t\t\treturn isEntityAdminExists.run(\n\t\t    async (response) => {\n\t\t\t\t //if(!!response && !!response.customerEntityPersonOIDForKeyPerson){\n\t\t\t\t if(appsmith.store.editKeyPersonOID != \"\"){\n\t\t\t\t\tshowAlert('Update to Entity Admin record::'+ appsmith.store.editKeyPersonOID) \n\t\t\t\t\tawait storeValue('customerEntityPersonOIDForEntityAdminPerson ',response.customerEntityPersonOIDForEntityAdminPerson )\n\t\t\t\t\tawait updateEntityAdmin.run((response) => showAlert('Entity Admin Person Details Updated'))\n\t\t\t\t\tHelper.updateEntityAdminCurrencyLimitQuery();\n\t\t  \t}else {\n\t\t\t\t\tconst personOID = utils.generateOID(19);\n\t\t\t\t\t//await createEntityAdmin.run((response) => {showAlert('Key Person Details Added') },(error) => {showAlert('Key Person Details Failed')},{personOID});\n\t\t\t\t\t//await createEntityAdminCurrencyLimit.run({personOID:personOID});\n\t\t\t\t\t//createEntityAdmin.run((response) => {return createEntityAdminCurrencyLimit.run({personOID:personOID})},(error) => {showAlert('Key Person Details Failed')},{personOID});\n\t\t\t\t\tconst response_key_person = await createEntityAdmin.run({personOID});\n\t\t\t\t\tif (!!response_key_person) {\n\t\t\t\t\t\t\tshowAlert('Entity Admin Person Details Added') \n\t\t\t\t\t\t\tawait createEntityAdminCurrencyLimit.run({personOID})\n\t\t\t\t\t\t\tshowAlert('Entity Admin Person Currency Limit Added') \n\t\t\t\t\t}\n\t\t  \t}\n\t\t\t\t \tnavigateTo('Entity Administrator Summary', {});\n\t\t   }\n\t    );\n\t\t} \n\t},\n\tdummy:() => {\n\t\t//const oid = isEntityAdminExists.run((response) =>{showAlert('return value is '+oid)};\n    //const return_currencylimit = getEntityAdminCurrencyLimit.run() ;\n\t\t//showAlert('OID is '+return_response.customerEntityPersonOIDForKeyPerson)\n\t\tconsole.log(appsmith.store.customerOID + \" \" + appsmith.store.editKeyPersonOID )\n\t\t//return return_currencylimit\n\t\t//{{Number()}}\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "Entity Administrator Add_entityAdminCreateAndUpdate",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620b86563cd8f8722954c210"
+}

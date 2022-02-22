@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObjectKYCIndPartnership",
+    "pageId": "Entity KYC Ind Partnership",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\t\tmyFungenerateOID: () => {\n\t\t//write code here\n\treturn Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1).concat('OID');\n\t},\nmyFunUploadKYCIndPartnership: async () => {\n\t\t\tQueryIndPartnerKycPOI.run();\n\t\tawait\tQueryInsertKYCIndPartnership.run({ docType: SelectPOI.selectedOptionValue , docPathFilename : selectEntityProofofIdentity.files[0].name});\n\t\n\t\tQueryIndPartnerKycPOA.run();\n\t\tawait\tQueryInsertKYCIndPartnership.run({docType: SelectPOA.selectedOptionValue , docPathFilename :selectEntityProofofAddress.files[0].name})\n\t\n\t\t  QueryIndPartnerKYCPAN.run();\n\t\tawait QueryInsertKYCIndPartnership.run({docType:'PAN',docPathFilename :selectEntityPAN.files[0].name})\n\t\n\t\t QueryIndPartnerKYCancelChq.run ();\n\t\t\tawait QueryInsertKYCIndPartnership.run({ docType:'Cancelled Cheque',docPathFilename :selectEntityCnclChq.files[0].name})\n\t\n\tQueryIndPartnerKYCImpExpCert.run();\n\tawait QueryInsertKYCIndPartnership.run({ docType:'Import Export Certificate',docPathFilename :selectEntityImpExpCert.files[0].name})\n\t\n\tQueryIndPartnerKYCPtnrshipDeed.run();\n\t\tawait QueryInsertKYCIndPartnership.run({ docType:'PartnerShip Deed',docPathFilename :selectEntityPtnerShipDeed.files[0].name})\n\t\n\t\n\tQueryIndPartnerKYCPtnrshipLtr.run();\n\t\tawait QueryInsertKYCIndPartnership.run({ docType:'Partnership Letter',docPathFilename :selectEntityPtnerShipLetter.files[0].name})\n\t\n\t{{navigateTo('Individual KYC Summary', {})}}\n\t}\n}\n",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Entity KYC Ind Partnership_JSObjectKYCIndPartnership",
+  "deleted": false,
+  "gitSyncId": "620a44fa5acff70fe6310821_620b8926febb1e7beb8ea0f4"
+}

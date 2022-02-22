@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "uboEntitiesCreateAndUpdate",
+    "pageId": "UBO Entities Add",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonClick: () => {\n\t\tif (Input1.text == \"      \" ){\n\t\t\t\tshowAlert('Enter First Name')\n\t\t}\n\t\telse {\n\t\t\treturn isUBOEntitiesExists.run(\n\t\t    async (response) => {\n\t\t\t\t //if(!!response && !!response.customerEntityPersonOIDForKeyPerson){\n\t\t\t\t if(appsmith.store.editUBOEntitiesOID != \"\"){\n\t\t\t\t\tshowAlert('Update to UBO Entities record::'+ appsmith.store.editUBOEntitiesOID) \n\t\t\t\t\tawait storeValue('customerEntityForUBOEntities',response.customerEntityForUBOEntities)\n\t\t\t\t\tawait updateUBOEntities.run((response) => showAlert('UBO Entities Updated'))\n\t\t\t\t\t}else {\n\t\t\t\t\tconst uboEntitiesOID = utils.generateOID(21);\n\t\t\t\t\tconst response_key_person = await createUBOEntities.run({uboEntitiesOID});\n\t\t\t\t\tif (!!response_key_person) {\n\t\t\t\t\t\t\tshowAlert('UBO Entities Added') \n\t\t\t\t\t}\n\t\t  \t}\n\t\t\t\t \tnavigateTo('UBO Entities Summary', {});\n\t\t   }\n\t    );\n\t\t} \n\t},\n\tdummy:() => {\n\t\t//const oid = isUBOEntitiesExists.run((response) =>{showAlert('return value is '+oid)};\n    return console.log(appsmith.store.customerOID + \" \" + appsmith.store.editUBOEntitiesOID )\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "UBO Entities Add_uboEntitiesCreateAndUpdate",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620b53873cd8f8722954c1de"
+}

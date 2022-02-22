@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "UpdateBusinessData",
+    "pageId": "All Constitution Foreign",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyUpdateandNavigateFun1: async () => {\n\t\t//write code here\n\t\t\tif(vayFgnConstitution.selectedOptionValue==\"others\")\n\t\t\t{\n\t\t\t\tstoreValue(\"vayIfFgnConstOthers\",\"true\");\n\t\t\t\tstoreValue(\"vayFgnConstitution\",vayFgnConstitutionOthers.text)\n\t\t\t}\n\t\telse\n\t{\n\t\tstoreValue(\"vayIfFgnConstOthers\",\"false\");\n\t\t\t\tstoreValue(\"vayFgnConstitution\",vayFgnConstitution.selectedOptionValue)\n\t}\n\t\n\t\tawait UpdateBusinessDetails.run();\n\t\tnavigateTo('Foreign Business Address', {})\n\t},\n\tmyFun2: () => {\n\t\t//write code here\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "All Constitution Foreign_UpdateBusinessData",
+  "deleted": false,
+  "gitSyncId": "61f91c227d9ae6350106c2a4_61fa5696f2b5fb722e8ee792"
+}

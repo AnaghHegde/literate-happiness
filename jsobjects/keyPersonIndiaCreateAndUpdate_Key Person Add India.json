@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "keyPersonIndiaCreateAndUpdate",
+    "pageId": "Key Person Add India",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonClick: () => {\n\t\t\tif (vaykeyPersonIndType.selectedOptionValue == \"      \" ){\n\t\t\t\tshowAlert('Select Key Person Type')\n\t\t}\n\t\telse {\n\t\t  return isKeyPersonIndiaExists.run(\n\t\t   async (response) => {\n\t\t\t\t //if(!!response && !!response.customerEntityPersonOIDForKeyPerson){\n\t\t\t\t if(appsmith.store.editKeyPersonOID != \"\"){\n\t\t\t\t\tshowAlert('Update to Key Person India record::'+ appsmith.store.editKeyPersonOID) \n\t\t\t\t\tawait storeValue('customerEntityPersonOIDForKeyPerson',response.customerEntityPersonOIDForKeyPerson)\n\t\t\t\t\tawait updateKeyPersonIndia.run((response) => showAlert('Key Person Details Updated'))\n\t\t\t\t\tHelper.updateKeyPersonCurrencyLimitQuery();\n\t\t  \t}else {\n\t\t\t\t\tconst personOID = utils.generateOID(19);\n\t\t\t\t\t//await createKeyPersonIndia.run((response) => {showAlert('Key Person Details Added') },(error) => {showAlert('Key Person Details Failed')},{personOID});\n\t\t\t\t\t//await createKeyPersonCurrencyLimit.run({personOID:personOID});\n\t\t\t\t\t//createKeyPersonIndia.run((response) => {return createKeyPersonCurrencyLimit.run({personOID:personOID})},(error) => {showAlert('Key Person Details Failed')},{personOID});\n\t\t\t\t\tconst response_key_person = await createKeyPersonIndia.run({personOID});\n\t\t\t\t\tif (!!response_key_person) {\n\t\t\t\t\t\t\tshowAlert('Key Person Details Added') \n\t\t\t\t\t\t\tawait createKeyPersonCurrencyLimit.run({personOID})\n\t\t\t\t\t\t\tshowAlert('Key Person Currency Limit Added') \n\t\t\t\t\t}\n\t\t  \t}\n\t\t\t\t \tnavigateTo('Key Person Summary', {});\n\t\t   }\n\t    );\n\t\t  \n\t\t}\n\t},\n\tdummy:() => {\n\t\t//const oid = isKeyPersonIndiaExists.run((response) =>{showAlert('return value is '+oid)};\n    const return_currencylimit = getKeyPersonCurrencyLimit.run() ;\n\t\t//showAlert('OID is '+return_response.customerEntityPersonOIDForKeyPerson)\n\t\tconsole.log(appsmith.store.customerOID + \" \" + appsmith.store.editKeyPersonOID )\n\t\treturn return_currencylimit\n\t\t{{Number()}}\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "Key Person Add India_keyPersonIndiaCreateAndUpdate",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_6200ffc81cafa2361db3d129"
+}

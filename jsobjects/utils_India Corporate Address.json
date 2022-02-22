@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "India Corporate Address",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgenerateOID: (intValue) => {\n\t\treturn [...Array(8)].map(() => Math.floor(Math.random() * intValue).toString(intValue)).join('')\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "India Corporate Address_utils",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_61fa67e88f87275123951b12"
+}

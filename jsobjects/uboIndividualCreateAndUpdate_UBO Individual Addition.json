@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "uboIndividualCreateAndUpdate",
+    "pageId": "UBO Individual Addition",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonClick: () => {\n\t\tif (Input1.text == \"      \" ){\n\t\t\t\tshowAlert('Enter First Name')\n\t\t}\n\t\telse {\n\t\t\treturn isUBOIndividualPersonExists.run(\n\t\t    async (response) => {\n\t\t\t\t //if(!!response && !!response.customerEntityPersonOIDForKeyPerson){\n\t\t\t\t if(appsmith.store.editKeyPersonOID != \"\"){\n\t\t\t\t\tshowAlert('Update to UBO Individual Person India record::'+ appsmith.store.editKeyPersonOID) \n\t\t\t\t\tawait storeValue('customerEntityPersonOIDForUBOIndividualPerson',response.customerEntityPersonOIDForUBOIndividualPerson)\n\t\t\t\t\tawait updateUBOIndividualPerson.run((response) => showAlert('UBO Individual Person Details Updated'))\n\t\t\t\t\t//Helper.updateAuthSignatoryPersonCurrencyLimitQuery();\n\t\t  \t}else {\n\t\t\t\t\tconst personOID = utils.generateOID(19);\n\t\t\t\t\t//await createUBOIndividualPerson.run((response) => {showAlert('Key Person Details Added') },(error) => {showAlert('Key Person Details Failed')},{personOID});\n\t\t\t\t\t//await createAuthSignCurrencyLimit.run({personOID:personOID});\n\t\t\t\t\t//createUBOIndividualPerson.run((response) => {return createAuthSignCurrencyLimit.run({personOID:personOID})},(error) => {showAlert('Key Person Details Failed')},{personOID});\n\t\t\t\t\tconst response_key_person = await createUBOIndividualPerson.run({personOID});\n\t\t\t\t\tif (!!response_key_person) {\n\t\t\t\t\t\t\tshowAlert('UBO Individual Person Details Added') \n\t\t\t\t\t\t\t//await createAuthSignCurrencyLimit.run({personOID})\n\t\t\t\t\t\t\t//showAlert('Auth Signatory Person Currency Limit Added') \n\t\t\t\t\t}\n\t\t  \t}\n\t\t\t\t \tnavigateTo('UBO Individuals Summary', {});\n\t\t   }\n\t    );\n\t\t} \n\t},\n\tdummy:() => {\n\t\t//const oid = isUBOIndividualPersonExists.run((response) =>{showAlert('return value is '+oid)};\n    //const return_currencylimit = getAuthSignPersonCurrencyLimit.run() ;\n\t\t//showAlert('OID is '+return_response.customerEntityPersonOIDForKeyPerson)\n\t\tconsole.log(appsmith.store.customerOID + \" \" + appsmith.store.editKeyPersonOID )\n\t\t//return return_currencylimit\n\t\t//{{Number()}}\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "UBO Individual Addition_uboIndividualCreateAndUpdate",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620a76d55ce68e0e609d9e37"
+}

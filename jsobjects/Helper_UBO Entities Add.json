@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Helper",
+    "pageId": "UBO Entities Add",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetUBOIndividualPersonData: ()=>{\n\t\treturn appsmith.store.keyPersonData;\n\t},\n\tgetCurrencies: ()=>{\n\t\treturn appsmith.store.vayCCY;\n\t},\n\t changeUBOEntitiesAddress: async () =>{\n\t\t\tconst retain_keyPersonData = await Helper.retainUBOEntitiesInKey()\n\t\t\tstoreValue('keyPersonData',retain_keyPersonData)\n\t\t  console.log('UBO Entities Data - ',appsmith.store.keyPersonData)\n\t\t\tif (vayEntityUboAddCountrySelect.selectedOptionValue == \"IN\"){\n\t\t\t\tnavigateTo('Add New Address Indian',{ \"bkPage\" : \"EntityUboAdd\" })\n\t\t\t}\n\t},\n\tretainUBOEntitiesInKey:() => {\n\t\t\tconst retain_keyPersonData = appsmith.store.keyPersonData\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_BUSINESS_NAME = Input1.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_HOLD_PERC =Number(Input8.text).toString()\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_CONST_TYPE = Input2.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_ISLISTED =Checkbox1.isChecked\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_REG_NO = Input7.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_REG_NAME =Input4.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_REG_PLACE =Input3.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_REG_COUNTRY =Select1.selectedOptionValue\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_TAX_RESID_COUNTRY=Select2.selectedOptionValue\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_TAX_ID =Input5.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_TAX_ACCOUNT_NO =Input6.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_ADDRESS_LINE1 =Input9.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_ADDRESS_LINE2 =Input10.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_CITY =Input11.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_DISTRICT =Input12.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_STATE =Input13.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_ZIP =Input14.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_COUNTRY =vayEntityUboAddCountrySelect.selectedOptionValue\n\t\treturn retain_keyPersonData\n\t},\n\tgetStore:() =>{\n\t\treturn appsmith.store;\n }\n}\n",
+    "variables": []
+  },
+  "id": "UBO Entities Add_Helper",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620b53933cd8f8722954c1ec"
+}

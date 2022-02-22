@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObjectUploadKYC",
+    "pageId": "Entity KYC Foreign",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\t\tmyFunUploadKYC: async () => {\n\t\t\tQueryPOI.run();\n\t\tawait\tQueryInsertEntityKYCFGN.run({ docType: vayProofofidentity.text, docPathFilename : selectFilesProofOfIdentity.files[0].name});\n\t\tQueryProofAddress.run();\n\t\tawait\tQueryInsertEntityKYCFGN.run({docType:vayProofofaddress.text,docPathFilename :selectFilesProofOfAddress.files[0].name})\n\t\t  QueryTaxRegCert.run();\n\t\tawait QueryInsertEntityKYCFGN.run({docType:'Tax Registration Certificate',docPathFilename :selectFilesTaxRegCert.files[0].name})\n\t\t QueryCancelledCheque.run ();\n\t\t\tawait QueryInsertEntityKYCFGN.run({ docType:'Cancelled Cheque',docPathFilename :selectFilesCancelledCheque.files[0].name})\n\t\tnavigateTo('Individual KYC Summary', {})\n\t},\n\tmyFun2: () => {\n\t\t//write code here\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Entity KYC Foreign_JSObjectUploadKYC",
+  "deleted": false,
+  "gitSyncId": "61f91c227d9ae6350106c2a4_6203ad53b559f64861c65692"
+}

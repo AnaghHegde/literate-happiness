@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "CreateForeignApplication",
+    "pageId": "Application Form - Foreign",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmystoreandcreateFun1:  async () => {\nstoreValue(\"vayFgnRegBusinessNameCopy\", vayFgnRegBusinessNameCopy.text);\nstoreValue(\"vayFgnTaxJurisdictionCopy\", vayFgnTaxJurisdictionCopy.selectedOptionValue)\n\t\tif(vayFgnTaxRegBody.selectedOptionValue==\"others\")\n\t\t\t{\n\t\t\t\tstoreValue(\"vayIfOthers\",\"true\");\n\t\t\t\tstoreValue(\"vayFgnTaxRegBody\",txtothers.text)\n\t\t\t}\n\t\telse\n\t{\n\t\tstoreValue(\"vayIfOthers\",\"false\");\n\t\t\t\tstoreValue(\"vayFgnTaxRegBody\",vayFgnTaxRegBody.selectedOptionValue)\n\t}\n\t\tstoreValue(\"vayFgnGSTNTinCopy\", vayFgnGSTNTinCopy.text)\n\t\tstoreValue(\"vayFgnTaxAccountNumberCopy\",vayFgnTaxAccountNumberCopy.text)\n\tawait createForeignCustomer.run(); \n\t//showAlert(response);\n\t\t\n\t return navigateTo('All Constitution Foreign', {});\n\t},\n\tmyFun2: () => {\n\t\t//write code here\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Application Form - Foreign_CreateForeignApplication",
+  "deleted": false,
+  "gitSyncId": "61f91c227d9ae6350106c2a4_61fa19b3f2b5fb722e8ee78a"
+}

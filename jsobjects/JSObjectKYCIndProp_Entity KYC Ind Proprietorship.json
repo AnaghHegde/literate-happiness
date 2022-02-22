@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObjectKYCIndProp",
+    "pageId": "Entity KYC Ind Proprietorship",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFungenerateOID: () => {\n\t\t//write code here\n\treturn Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1).concat('OID');\n\t},\nmyFunUploadKYCIndProp: async () => {\n\t\t\tQueryEntityProofdoc1.run();\n\t\tawait\tQueryInsertEntityKYCIndProp.run({ docType: selectEntityProofdoc1Type.selectedOptionValue , docPathFilename : selectEntityProofdoc1.files[0].name});\n\t\tQueryEntityProofdoc2.run();\n\t\tawait\tQueryInsertEntityKYCIndProp.run({docType:selectEntityProofdoc2Type.selectedOptionValue , docPathFilename :selectEntityProofdoc2.files[0].name})\n\t\t  QueryEntityPAN.run();\n\t\tawait QueryInsertEntityKYCIndProp.run({docType:'PAN',docPathFilename :selectEntityPAN.files[0].name})\n\t\t QueryEntityCnclChq.run ();\n\t\t\tawait QueryInsertEntityKYCIndProp.run({ docType:'CancelledCheque',docPathFilename :selectEntityCnclChq.files[0].name})\n\tQueryEntityImpExpCert.run();\n\tawait QueryInsertEntityKYCIndProp.run({ docType:'ImportExportCertificate',docPathFilename :selectEntityImpExpCert.files[0].name})\n\t{{navigateTo('Individual KYC Summary', {})}}\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Entity KYC Ind Proprietorship_JSObjectKYCIndProp",
+  "deleted": false,
+  "gitSyncId": "61f91c227d9ae6350106c2a4_62064d827b36c77a8580c7d9"
+}

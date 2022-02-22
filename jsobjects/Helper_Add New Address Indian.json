@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Helper",
+    "pageId": "Add New Address Indian",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tupdateAddress: async () => {\n\t\tconst retain_keyPersonData = appsmith.store.keyPersonData\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_ADDRESS_LINE1 =vayNewAddAddr1.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_ADDRESS_LINE2 =vayNewAddAddr2.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_CITY =vayNewAddCity.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_DISTRICT =vayNewAddDistrict.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_STATE =vayNewAddState.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_ZIP =vayIndPinCode.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_UBO_ENTITY_COUNTRY =\"IN\"\n\t\t  await storeValue('keyPersonData',retain_keyPersonData)\n\t\t  return retain_keyPersonData\n},\n\tupdateEntityAdminAddress: async () => {\n\t\tconst retain_keyPersonData = appsmith.store.keyPersonData\n\t\t\tretain_keyPersonData[0].CUSTOMER_KEY_PERSON_ADDRESS_LINE1 =vayNewAddAddr1.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_KEY_PERSON_ADDRESS_LINE2 =vayNewAddAddr2.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_KEY_PERSON_ADDRESS_CITY =vayNewAddCity.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_KEY_PERSON_ADDRESS_DISTRICT =vayNewAddDistrict.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_KEY_PERSON_ADDRESS_STATE =vayNewAddState.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_KEY_PERSON_ADDRESS_ZIP =vayIndPinCode.text\n\t\t\tretain_keyPersonData[0].CUSTOMER_KEY_PERSON_ADDRESS_COUNTRY =\"IN\"\n\t\t  await storeValue('keyPersonData',retain_keyPersonData)\n\t\t  return retain_keyPersonData\n}\n\t\n}",
+    "variables": []
+  },
+  "id": "Add New Address Indian_Helper",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620b774f3cd8f8722954c1f4"
+}

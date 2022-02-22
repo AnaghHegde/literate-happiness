@@ -1,0 +1,1004 @@
+{
+  "unpublishedPage": {
+    "name": "Add New Address Indian",
+    "slug": "add-new-address-indian",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 827,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 920,
+          "containerStyle": "none",
+          "snapRows": 63,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 49,
+          "minHeight": 640,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "NONE",
+              "widgetName": "Container1",
+              "borderColor": "transparent",
+              "isCanvas": true,
+              "displayName": "Container",
+              "iconSVG": "/static/media/icon.1977dca3.svg",
+              "topRow": 0,
+              "bottomRow": 89,
+              "parentRowSpace": 10,
+              "type": "CONTAINER_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 14.0625,
+              "leftColumn": 0,
+              "children": [
+                {
+                  "widgetName": "Canvas1",
+                  "rightColumn": 337.5,
+                  "detachFromLayout": true,
+                  "displayName": "Canvas",
+                  "widgetId": "sthbak4i47",
+                  "containerStyle": "none",
+                  "topRow": 0,
+                  "bottomRow": 980,
+                  "parentRowSpace": 1,
+                  "isVisible": true,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "version": 1,
+                  "hideCard": true,
+                  "parentId": "vfc0s2nkmp",
+                  "minHeight": 400,
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "widgetName": "Image1",
+                      "displayName": "Image",
+                      "iconSVG": "/static/media/icon.52d8fb96.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "IMAGE_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 13.75,
+                      "dynamicTriggerPathList": [],
+                      "imageShape": "RECTANGLE",
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [],
+                      "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+                      "key": "p6fdp3nhxk",
+                      "image": "https://vayana.com/wp-content/uploads/2021/05/Group-554-1.svg",
+                      "rightColumn": 13,
+                      "objectFit": "contain",
+                      "widgetId": "zdn01cm674",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "sthbak4i47",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "maxZoomLevel": 1,
+                      "enableDownload": false,
+                      "enableRotation": false
+                    },
+                    {
+                      "widgetName": "Form1",
+                      "backgroundColor": "white",
+                      "rightColumn": 64,
+                      "isCanvas": true,
+                      "displayName": "Form",
+                      "iconSVG": "/static/media/icon.ea3e08d1.svg",
+                      "widgetId": "v9609g9bh1",
+                      "topRow": 6,
+                      "bottomRow": 86,
+                      "parentRowSpace": 10,
+                      "isVisible": true,
+                      "type": "FORM_WIDGET",
+                      "hideCard": false,
+                      "parentId": "sthbak4i47",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 13.75,
+                      "leftColumn": 0,
+                      "children": [
+                        {
+                          "widgetName": "Canvas2",
+                          "rightColumn": 330,
+                          "detachFromLayout": true,
+                          "displayName": "Canvas",
+                          "widgetId": "565dai981o",
+                          "containerStyle": "none",
+                          "topRow": 0,
+                          "bottomRow": 890,
+                          "parentRowSpace": 1,
+                          "isVisible": true,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "version": 1,
+                          "hideCard": true,
+                          "parentId": "v9609g9bh1",
+                          "minHeight": 400,
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "children": [
+                            {
+                              "widgetName": "Text1",
+                              "displayName": "Text",
+                              "iconSVG": "/static/media/icon.97c59b52.svg",
+                              "topRow": 1,
+                              "bottomRow": 5,
+                              "type": "TEXT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 1.5,
+                              "dynamicBindingPathList": [],
+                              "shouldTruncate": false,
+                              "truncateButtonColor": "#FFC13D",
+                              "text": "Add New Address",
+                              "key": "l143zu8p6u",
+                              "rightColumn": 25.5,
+                              "textAlign": "LEFT",
+                              "widgetId": "96r4xbi3it",
+                              "isVisible": true,
+                              "fontStyle": "BOLD",
+                              "textColor": "#231F20",
+                              "shouldScroll": false,
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "fontSize": "HEADING1"
+                            },
+                            {
+                              "resetFormOnClick": true,
+                              "widgetName": "FormButton1",
+                              "onClick": "{{\n\t(function(){\n\t\t if(vayNewAddCountry.text=='India')\n\t\t\t{\n\t\t\t\tstoreValue('vayNewAddCountryCode','IN')\n\t\t\t}\n\t\tif (appsmith.URL.queryParams.bkPage == \"IndNCAddCom\"){\n\t\t\tstoreValue(\"vayIndAddrType\", \"Comm and Reg Address-Both\");\n\t\t\tstoreValue('vayNcComAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayNcComAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayNcComCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayNcComDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayNcComState', vayNewAddState.text)\n\t\t\tstoreValue('vayNcComCountry', vayNewAddCountry.text)\n\t\t\tstoreValue('vayNcComPinCode', vayIndPinCode.text)\n\t\t\tnavigateTo('India Non Corporate Address',{})\n\t\t}\n\t\telse if (appsmith.URL.queryParams.bkPage == \"IndNCAddReg\"){\n\t\t\tstoreValue(\"vayIndAddrType\", \"Comm and Reg Address-Both\");\n\t\t\tstoreValue('vayNcRegAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayNcRegAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayNcRegCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayNcRegDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayNcRegState', vayNewAddState.text)\n\t\t\tstoreValue('vayNcRegCountry', vayNewAddCountry.text)\n\t\t\tstoreValue('vayNcRegPinCode', vayIndPinCode.text)\n\t\t\tnavigateTo('India Non Corporate Address',{})\n\t\t}\n\t\telse if (appsmith.URL.queryParams.bkPage == \"IndCrAddCom\"){\n\nstoreValue(\"vayIndAddrType\", \"Communication Address\");\n\t\t\tstoreValue('vayCrComAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayCrComAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayCrComCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayCrComDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayCrComState', vayNewAddState.text)\n\t\t\tstoreValue('vayCrComCountry', vayNewAddCountry.text)\n\t\t\tstoreValue('vayCrComPinCode', vayIndPinCode.text)\n\t\t\tnavigateTo('India Corporate Address',{})\n\t\t}\n\t\telse if (appsmith.URL.queryParams.bkPage == \"IndKpAdd\"){\n\t\t\tstoreValue('vayIndKpAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayIndKpAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayIndKpCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayIndKpDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayIndKpState', vayNewAddState.text)\n\t\t\tstoreValue('vayIndKpCountry', \"IN\")\n\t\t\tstoreValue('vayIndKpPinCode', vayIndPinCode.text)\n\t\t\tnavigateTo('Key Person Add India',{})\n\t\t}\n\t\telse if (appsmith.URL.queryParams.bkPage == \"IndAsAdd\"){\n\t\t\tstoreValue('vayIndAsAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayIndAsAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayIndAsCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayIndAsDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayIndAsState', vayNewAddState.text)\n\t\t\tstoreValue('vayIndAsCountry', \"IN\")\n\t\t\tstoreValue('vayIndAsPinCode', vayIndPinCode.text)\n\t\t\t\n\t\t\t\n\t\t\tnavigateTo('Auth Signatory Add India',{})\n\t\t}\n\t\telse if (appsmith.URL.queryParams.bkPage == \"IndUboAdd\"){\n\t\t\tstoreValue('vayIndUboAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayIndUboAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayIndUboCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayIndUboDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayIndUboState', vayNewAddState.text)\n\t\t\tstoreValue('vayIndUboCountry', \"IN\")\n\t\t\tstoreValue('vayIndUboPinCode', vayIndPinCode.text)\n\t\t\tnavigateTo('UBO Individual Addition',{})\n\t\t}\n\t\telse if (appsmith.URL.queryParams.bkPage == \"EntityUboAdd\"){\n\t\t\tstoreValue('vayEntityUboAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayEntityUboAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayEntityUboCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayEntityUboDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayEntityUboState', vayNewAddState.text)\n\t\t\tstoreValue('vayEntityUboCountry', \"IN\")\n\t\t\tstoreValue('vayEntityUboPinCode', vayIndPinCode.text)\n\t\t\t\nHelper.updateAddress()\t\n\t\t\t\n\t\t\tnavigateTo('UBO Entities Add',{})\n\t\t}\n\t\telse if (appsmith.URL.queryParams.bkPage == \"IndEaAdd\"){\n\t\t\tstoreValue('vayIndEaAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayIndEaAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayIndEaCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayIndEaDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayIndEaState', vayNewAddState.text)\n\t\t\tstoreValue('vayIndEaCountry', \"IN\")\n\t\t\tstoreValue('vayIndEaPinCode', vayIndPinCode.text)\n\t\t\t\n\t\t\tHelper.updateEntityAdminAddress()\n\t\t\tnavigateTo('Entity Administrator Add',{})\n\t\t}\n\t\telse if (appsmith.URL.queryParams.bkPage == \"FgnAsAdd\"){\n\t\t\tstoreValue('vayFgnAsAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayFgnAsAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayFgnAsCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayFgnAsDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayFgnAsState', vayNewAddState.text)\n\t\t\tstoreValue('vayFgnAsCountry', \"IN\")\n\t\t\tstoreValue('vayFgnAsPinCode', vayIndPinCode.text)\n\t\t\tnavigateTo('Auth Signatory Add Foreign',{})\n\t\t}\n\t\telse if (appsmith.URL.queryParams.bkPage == \"FgnKpAdd\"){\n\t\t\tstoreValue('vayFgnKpAddr1', vayNewAddAddr1.text)\n\t\t\tstoreValue('vayFgnKpAddr2', vayNewAddAddr2.text)\n\t\t\tstoreValue('vayFgnKpCity', vayNewAddCity.text)\n\t\t\tstoreValue('vayFgnKpDistrict', vayNewAddDistrict.text)\n\t\t\tstoreValue('vayFgnKpState', vayNewAddState.text)\n\t\t\tstoreValue('vayFgnKpCountry', \"IN\")\n\t\t\tstoreValue('vayFgnKpPinCode', vayIndPinCode.text)\n\t\t\tnavigateTo('Key Person Add Foreign',{})\n\t\t}\n\t})()\n}}",
+                              "buttonColor": "#03B365",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "displayName": "FormButton",
+                              "iconSVG": "/static/media/icon.c8f649ed.svg",
+                              "topRow": 72,
+                              "bottomRow": 76,
+                              "type": "FORM_BUTTON_WIDGET",
+                              "hideCard": true,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 46,
+                              "dynamicBindingPathList": [],
+                              "text": "Copy Address",
+                              "key": "1o03qmp5up",
+                              "rightColumn": 62,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "c2rup87b55",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": true,
+                              "buttonVariant": "PRIMARY"
+                            },
+                            {
+                              "resetFormOnClick": true,
+                              "widgetName": "FormButton2",
+                              "buttonColor": "#03B365",
+                              "displayName": "FormButton",
+                              "iconSVG": "/static/media/icon.c8f649ed.svg",
+                              "topRow": 72,
+                              "bottomRow": 76,
+                              "type": "FORM_BUTTON_WIDGET",
+                              "hideCard": true,
+                              "animateLoading": true,
+                              "leftColumn": 29,
+                              "text": "Reset",
+                              "key": "1o03qmp5up",
+                              "rightColumn": 45,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "vrjbqr4okn",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": false,
+                              "buttonVariant": "SECONDARY"
+                            },
+                            {
+                              "widgetName": "vayIndPinCode",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 7,
+                              "bottomRow": 11,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.4375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "g4beejo8bu",
+                              "isRequired": true,
+                              "rightColumn": 21,
+                              "widgetId": "8uwyne812l",
+                              "isVisible": true,
+                              "label": "Pin Code",
+                              "allowCurrencyChange": false,
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": ""
+                            },
+                            {
+                              "widgetName": "Button1",
+                              "onClick": "{{getAddressbyPincode.run()}}",
+                              "buttonColor": "#03B365",
+                              "displayName": "Button",
+                              "iconSVG": "/static/media/icon.cca02633.svg",
+                              "topRow": 7,
+                              "bottomRow": 11,
+                              "parentRowSpace": 10,
+                              "type": "BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.4375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 23,
+                              "dynamicBindingPathList": [],
+                              "text": "Get Address",
+                              "isDisabled": false,
+                              "key": "azbjersmzb",
+                              "rightColumn": 33,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "h69g5mtoen",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "buttonVariant": "PRIMARY",
+                              "placement": "CENTER"
+                            },
+                            {
+                              "widgetName": "addressSearchResult",
+                              "defaultPageSize": 0,
+                              "columnOrder": [
+                                "customColumn1",
+                                "Name",
+                                "Division",
+                                "Region",
+                                "District",
+                                "State",
+                                "Description",
+                                "BranchType",
+                                "DeliveryStatus",
+                                "Circle",
+                                "Block",
+                                "Country",
+                                "Pincode"
+                              ],
+                              "isVisibleDownload": true,
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Table",
+                              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+                              "topRow": 17,
+                              "bottomRow": 45,
+                              "isSortable": true,
+                              "parentRowSpace": 10,
+                              "type": "TABLE_WIDGET",
+                              "defaultSelectedRow": "0",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.4375,
+                              "dynamicTriggerPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "tableData"
+                                },
+                                {
+                                  "key": "primaryColumns.Name.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Description.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.BranchType.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.DeliveryStatus.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Circle.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.District.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Division.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Region.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Block.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.State.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Country.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.Pincode.computedValue"
+                                },
+                                {
+                                  "key": "derivedColumns.customColumn1.buttonLabel"
+                                },
+                                {
+                                  "key": "primaryColumns.customColumn1.buttonLabel"
+                                },
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "leftColumn": 1,
+                              "primaryColumns": {
+                                "Name": {
+                                  "index": 0,
+                                  "width": 150,
+                                  "id": "Name",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Name",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.Name))}}"
+                                },
+                                "Description": {
+                                  "index": 1,
+                                  "width": 150,
+                                  "id": "Description",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Description",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.Description))}}"
+                                },
+                                "BranchType": {
+                                  "index": 2,
+                                  "width": 150,
+                                  "id": "BranchType",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "BranchType",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.BranchType))}}"
+                                },
+                                "DeliveryStatus": {
+                                  "index": 3,
+                                  "width": 150,
+                                  "id": "DeliveryStatus",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "DeliveryStatus",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.DeliveryStatus))}}"
+                                },
+                                "Circle": {
+                                  "index": 4,
+                                  "width": 150,
+                                  "id": "Circle",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Circle",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.Circle))}}"
+                                },
+                                "District": {
+                                  "index": 5,
+                                  "width": 150,
+                                  "id": "District",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "District",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.District))}}"
+                                },
+                                "Division": {
+                                  "index": 6,
+                                  "width": 150,
+                                  "id": "Division",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Division",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.Division))}}"
+                                },
+                                "Region": {
+                                  "index": 7,
+                                  "width": 150,
+                                  "id": "Region",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Region",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.Region))}}"
+                                },
+                                "Block": {
+                                  "index": 8,
+                                  "width": 150,
+                                  "id": "Block",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Block",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.Block))}}"
+                                },
+                                "State": {
+                                  "index": 9,
+                                  "width": 150,
+                                  "id": "State",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "State",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.State))}}"
+                                },
+                                "Country": {
+                                  "index": 10,
+                                  "width": 150,
+                                  "id": "Country",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Country",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.Country))}}"
+                                },
+                                "Pincode": {
+                                  "index": 11,
+                                  "width": 150,
+                                  "id": "Pincode",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textSize": "PARAGRAPH",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": false,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Pincode",
+                                  "computedValue": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( currentRow.Pincode))}}"
+                                },
+                                "customColumn1": {
+                                  "index": 12,
+                                  "width": 150,
+                                  "id": "customColumn1",
+                                  "columnType": "button",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": true,
+                                  "label": "Select",
+                                  "computedValue": "",
+                                  "buttonStyle": "rgb(3, 179, 101)",
+                                  "buttonLabelColor": "#FFFFFF",
+                                  "buttonColor": "#3366FF",
+                                  "menuColor": "#03B365",
+                                  "labelColor": "#FFFFFF",
+                                  "buttonLabel": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( 'Select'))}}"
+                                }
+                              },
+                              "delimiter": ",",
+                              "key": "p6qvjzqndy",
+                              "derivedColumns": {
+                                "customColumn1": {
+                                  "index": 12,
+                                  "width": 150,
+                                  "id": "customColumn1",
+                                  "columnType": "button",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellVisible": true,
+                                  "isDerived": true,
+                                  "label": "Select",
+                                  "computedValue": "",
+                                  "buttonStyle": "rgb(3, 179, 101)",
+                                  "buttonLabelColor": "#FFFFFF",
+                                  "buttonColor": "#3366FF",
+                                  "menuColor": "#03B365",
+                                  "labelColor": "#FFFFFF",
+                                  "buttonLabel": "{{addressSearchResult.sanitizedTableData.map((currentRow) => ( 'Select'))}}"
+                                }
+                              },
+                              "rightColumn": 62,
+                              "textSize": "PARAGRAPH",
+                              "widgetId": "qvouf8n5tj",
+                              "isVisibleFilters": true,
+                              "tableData": "{{getAddressbyPincode.data[0].PostOffice}}",
+                              "isVisible": "{{getAddressbyPincode.data[0].Status === \"Success\"}}",
+                              "label": "Data",
+                              "searchKey": "",
+                              "enableClientSideSearch": true,
+                              "version": 3,
+                              "totalRecordsCount": 0,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "horizontalAlignment": "LEFT",
+                              "isVisibleSearch": true,
+                              "isVisiblePagination": true,
+                              "verticalAlignment": "CENTER",
+                              "columnSizeMap": {
+                                "task": 245,
+                                "step": 62,
+                                "status": 75,
+                                "customColumn1": 82
+                              }
+                            },
+                            {
+                              "widgetName": "vayNewAddAddr1",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 51,
+                              "bottomRow": 55,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.4375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "g4beejo8bu",
+                              "isRequired": true,
+                              "rightColumn": 28,
+                              "widgetId": "dfqixgkphs",
+                              "isVisible": "{{getAddressbyPincode.data[0].Status === \"Success\"}}",
+                              "label": "Address Line 1",
+                              "allowCurrencyChange": false,
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": ""
+                            },
+                            {
+                              "widgetName": "vayNewAddAddr2",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 57,
+                              "bottomRow": 61,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.4375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultText"
+                                },
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": true,
+                              "key": "g4beejo8bu",
+                              "isRequired": false,
+                              "rightColumn": 28,
+                              "widgetId": "ol96qfweai",
+                              "isVisible": "{{getAddressbyPincode.data[0].Status === \"Success\"}}",
+                              "label": "Address Line 2",
+                              "allowCurrencyChange": false,
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": "{{addressSearchResult.selectedRow.Name}},  {{addressSearchResult.selectedRow.Division}}"
+                            },
+                            {
+                              "widgetName": "vayNewAddCity",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 63,
+                              "bottomRow": 67,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.4375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 1,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultText"
+                                },
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": true,
+                              "key": "g4beejo8bu",
+                              "isRequired": false,
+                              "rightColumn": 28,
+                              "widgetId": "ep5o6ivrpw",
+                              "isVisible": "{{getAddressbyPincode.data[0].Status === \"Success\"}}",
+                              "label": "City",
+                              "allowCurrencyChange": false,
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": "{{addressSearchResult.selectedRow.Region}}"
+                            },
+                            {
+                              "widgetName": "vayNewAddDistrict",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 51,
+                              "bottomRow": 55,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.4375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 34,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultText"
+                                },
+                                {
+                                  "key": "isVisible"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": true,
+                              "key": "g4beejo8bu",
+                              "isRequired": false,
+                              "rightColumn": 62,
+                              "widgetId": "uhz3l1mgdc",
+                              "isVisible": "{{getAddressbyPincode.data[0].Status === \"Success\"}}",
+                              "label": "District",
+                              "allowCurrencyChange": false,
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": "{{addressSearchResult.selectedRow.District}}"
+                            },
+                            {
+                              "widgetName": "vayNewAddState",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 57,
+                              "bottomRow": 61,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.4375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 34,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": true,
+                              "key": "g4beejo8bu",
+                              "isRequired": false,
+                              "rightColumn": 62,
+                              "widgetId": "03er5y1ash",
+                              "isVisible": true,
+                              "label": "State",
+                              "allowCurrencyChange": false,
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": "{{addressSearchResult.selectedRow.State}}"
+                            },
+                            {
+                              "widgetName": "vayNewAddCountry",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595.svg",
+                              "topRow": 63,
+                              "bottomRow": 67,
+                              "parentRowSpace": 10,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 13.4375,
+                              "dynamicTriggerPathList": [],
+                              "resetOnSubmit": true,
+                              "leftColumn": 34,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": true,
+                              "key": "g4beejo8bu",
+                              "isRequired": false,
+                              "rightColumn": 62,
+                              "widgetId": "0o64s15fiw",
+                              "isVisible": true,
+                              "label": "Country",
+                              "allowCurrencyChange": false,
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "iconAlign": "left",
+                              "defaultText": "{{addressSearchResult.selectedRow.Country}}"
+                            },
+                            {
+                              "boxShadow": "NONE",
+                              "widgetName": "IconButton1",
+                              "onClick": "{{navigateTo(appsmith.store.vayAddressBackpage, {})}}",
+                              "buttonColor": "#03B365",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "displayName": "Icon Button",
+                              "iconSVG": "/static/media/icon.1a0c634a.svg",
+                              "topRow": 7,
+                              "bottomRow": 11,
+                              "parentRowSpace": 10,
+                              "type": "ICON_BUTTON_WIDGET",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 12.65625,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 58,
+                              "dynamicBindingPathList": [],
+                              "isDisabled": false,
+                              "key": "y39k07kqjm",
+                              "rightColumn": 62,
+                              "iconName": "arrow-left",
+                              "widgetId": "q6xr1dg22i",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "565dai981o",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "CIRCLE",
+                              "buttonVariant": "SECONDARY"
+                            }
+                          ],
+                          "key": "6ogv8mszvl"
+                        }
+                      ],
+                      "key": "oq39dj5nou"
+                    }
+                  ],
+                  "key": "6ogv8mszvl"
+                }
+              ],
+              "borderWidth": "0",
+              "key": "vmgw7eevzk",
+              "backgroundColor": "#FFFFFF",
+              "rightColumn": 64,
+              "widgetId": "vfc0s2nkmp",
+              "containerStyle": "card",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Add New Address Indian_getAddressbyPincode",
+              "name": "getAddressbyPincode",
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "vayIndPinCode.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Add New Address Indian",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "61d08dd5a4437918c01f9d15_61dec6c419ba421fdd1cd925"
+}

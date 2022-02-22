@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "noncorpCustomerCreateAndUpdate",
+    "pageId": "India Non Corporate Address",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonClick: () => {\n\t\t\tif (vayIndNcCommunicationAddress.text == \"      \" || vayIndNcRegisteredAddress == \"      \" ){\n\t\t\t\tshowAlert('We need your communication and registration Address')\n\t\t}\n\t\telse {\n\t\t  return isNonCorpCustomerAddressExists.run(\n\t\t   async (response) => {\n\t\t  \t//if(response.count > 0){\n\t\t\t\t//if(response.length > 0 && response != null && response.customerEntityOIDForAddress !=\"\"){ \n\t\t\t\t if(!!response && !!response.customerEntityOIDForAddress){\n\t\t\t\t\tawait storeValue('customerEntityOIDForAddress',response.customerEntityOIDForAddress)\n\t\t\t\t\tawait updateNonCorpCustomerDetailAdd.run((response) => showAlert('Customer Details Updated'))\n\t\t  \t}else {\n\t\t\t\t\tawait createNonCorpCustomerDetailAdd.run((response) => {showAlert('Customer Details Created')});\n\t\t  \t}\n\t\t\t\t \t//navigateTo('Currencies',{});\n\t\t\t\t //if(appsmith.store.vayApplicantJurisdiction == \"IN\"){ \n\t\t\t\t\t navigateTo('Key Person Add India',{})\n\t\t\t\t //}else{\n\t\t\t\t //  navigateTo('Key Person Add Foreign',{})\n\t\t\t\t //}\n\t\t\t }\n\t    );\n\t\t  \n\t\t}\n\t},\n\tdummy:() => {\n\t\t{{Number()}}\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "India Non Corporate Address_noncorpCustomerCreateAndUpdate",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_6200cf5a1cafa2361db3d111"
+}

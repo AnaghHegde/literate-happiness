@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "utils",
+    "pageId": "UBO Individual Addition",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgenerateOID: (intValue) => {\n\t\treturn [...Array(8)].map(() => Math.floor(Math.random() * intValue).toString(intValue)).join('')\n\t}\n}\n",
+    "variables": []
+  },
+  "id": "UBO Individual Addition_utils",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620a76dc5ce68e0e609d9e3b"
+}

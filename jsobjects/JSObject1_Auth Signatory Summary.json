@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Auth Signatory Summary",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t\treturn appsmith.store\n\t},\n\tmyFun2: () => {\n\t\t//write code here\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Auth Signatory Summary_JSObject1",
+  "deleted": false,
+  "gitSyncId": "61f91c227d9ae6350106c2a4_620654b57b36c77a8580c7e5"
+}

@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "LoginBasedOn_SelectedRole",
+    "pageId": "LogIn",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\n{{ if(appsmith.store.selectedRole ==='Registered')\n{\n\t\tLogInAPI.run(() => {\n\tconst authToken = LogInAPI.data.data.token.toString();\n\tconst userId = LogInAPI.data.data.userId.toString();\n\tif(authToken){\n\t\tstoreValue(\"authToken\",authToken);\n\t\tstoreValue(\"userId\",userId);\n\tnavigateTo('Homepage');\n\t}\n\t\t\t\n\t\t\telse{ \n\t\t\tshowAlert('Invalid Username,password','error');}}\n\t\t\t\t\t\t)}\n else\n\t {\n\t\t showAlert(\"User Not registered, Please choose Guest User\");\n\t }\n \n }}\t},\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "LogIn_LoginBasedOn_SelectedRole",
+  "deleted": false,
+  "gitSyncId": "620a44fa5acff70fe6310821_620dee63c1704e43c2d412e2"
+}

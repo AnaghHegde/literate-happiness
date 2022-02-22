@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObjectIndIndiaKYC",
+    "pageId": "Individual KYC India Add",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\nmyFungenerateOID: () => {\n\t\treturn Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1).concat('OID');\n\t}\t,\nmyFunUploadKYCIndia: async () => {\n\t\t\tQueryIndKycIndiaPOI.run();\n\t\tawait\tQueryInsertIndIndia.run({ docType:vayIndIndiaKycPoiSelection.selectedOptionValue, docPathFilename :vayIndIndiaKycPoiUpload.files[0].name});\n\t\n\t\tQueryIndKycIndiaPOA.run();\n\t\tawait\tQueryInsertIndIndia.run({docType:vayIndIndiaKycPoaSelection.selectedOptionValue,docPathFilename :vayIndIndiaKycPoaUpload.files[0].name})\n\t\t  QueryIndKycIndiaPhoto.run();\n\t\tawait QueryInsertIndIndia.run({docType:'IndividualIndiaPhoto',docPathFilename : vayIndIndiaKycPhotoUpload.files[0].name})\n\t\t navigateTo('Individual KYC Summary', {})\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Individual KYC India Add_JSObjectIndIndiaKYC",
+  "deleted": false,
+  "gitSyncId": "620a44fa5acff70fe6310821_620ba208febb1e7beb8ea126"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "fetchEntityAdminData",
+    "pageId": "Entity Administrator Summary",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tonClick: () => {\n\t\tstoreValue('editKeyPersonOID',appsmith.store.editKeyPersonOID)\n\t\tshowAlert('Entity Admin Person Record :'+appsmith.store.editKeyPersonOID);\n\t\treturn getEntityAdminDetails.run( async (response) => {\n\t\t\tif (!!response) {\n\t\t\t\t// Need to build logic to create the person details\n\t\t\t\tshowAlert('Success - Fetch Entity Admin Person India Details');\n\t\t\t\tawait storeValue('keyPersonData',response);\n\t\t\t\tnavigateTo('Entity Administrator Add');\n\t\t }\n\t\t}\n\t)\n},\n\tdummy:() => {\n\t\t//const response_personDetails = getEntityAdminDetails.run();\n\t\t//return response_personDetails;\n\t\t//storeValue('customerOID','7b38d343');\n\t\tif(appsmith.store.editKeyPersonOID != \"\"){\n\t\t\t\t//storeValue('editKeyPersonOID',\"\");\n\t\t\t\n\t\t}\n\t\treturn 'Customer OID-'+appsmith.store.customerOID+' Entity Admin Person OID '+appsmith.store.editKeyPersonOID + 'Jurisdiction '+appsmith.store.vayApplicantJurisdiction;\n\t}\n}\t",
+    "variables": []
+  },
+  "id": "Entity Administrator Summary_fetchEntityAdminData",
+  "deleted": false,
+  "gitSyncId": "61e6589e69c0e21f279fec21_620b80cd3cd8f8722954c1fe"
+}
